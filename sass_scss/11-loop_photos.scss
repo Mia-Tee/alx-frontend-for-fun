@@ -1,7 +1,7 @@
-/* Creates classes with different width */
+@import '11-photos';
 
-@for $item from 1 through 4 {
-  .col-#{$item} {
-    width: 100% / $item;
+@each $name in $list-names {
+  .photo-#{$name} {
+      background: image-url('photos/#{$name}.jpg') no-repeat;
   }
 }
